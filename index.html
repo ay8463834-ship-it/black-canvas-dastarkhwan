@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Mughal's Dastarkhwan | House of Mughlai Delicacies, Kaiserbagh, Lucknow</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0f0d0a;--cream:#f4ead7;--gold:#d9a13b;--sub:#c9bda6;--card:#1a1610;}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--cream);font-family:Inter,sans-serif;line-height:1.6}
+.serif{font-family:'Playfair Display',serif}
+header{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:18px 40px;background:rgba(15,13,10,.75);backdrop-filter:blur(8px);border-bottom:1px solid rgba(217,161,59,.2)}
+.logo{font-family:'Playfair Display',serif;font-size:20px;letter-spacing:.5px;color:var(--cream)}
+.logo b{color:var(--gold);font-weight:700}
+nav a{color:var(--sub);text-decoration:none;margin-left:26px;font-size:14px;transition:color .2s}
+nav a:hover{color:var(--gold)}
+.hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;background:url('img/night.jpg') center/cover no-repeat}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,13,10,.25) 0%,rgba(15,13,10,.85) 82%)}
+.hero-inner{position:relative;z-index:2;padding:0 40px 90px;max-width:1100px}
+.eyebrow{display:inline-block;border:1px solid rgba(217,161,59,.55);color:var(--gold);font-size:11px;letter-spacing:3px;padding:8px 16px;border-radius:999px;margin-bottom:26px;text-transform:uppercase}
+h1{font-family:'Playfair Display',serif;font-size:clamp(40px,7vw,84px);line-height:1.05;font-weight:500}
+h1 em{color:var(--gold);font-style:italic}
+.hero p{max-width:560px;color:var(--sub);margin:22px 0 34px;font-size:17px}
+.btn{display:inline-block;padding:15px 30px;border-radius:999px;text-decoration:none;font-weight:600;font-size:15px}
+.btn-gold{background:var(--gold);color:#241c0d}
+.btn-ghost{border:1px solid rgba(244,234,215,.35);color:var(--cream);margin-left:12px}
+.strip{display:flex;gap:0;border-top:1px solid rgba(217,161,59,.2);border-bottom:1px solid rgba(217,161,59,.2);background:#14100a}
+.strip div{flex:1;padding:26px 40px;text-align:center;border-right:1px solid rgba(217,161,59,.12)}
+.strip div:last-child{border-right:none}
+.strip .n{font-family:'Playfair Display',serif;font-size:26px;color:var(--gold)}
+.strip .l{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--sub);margin-top:4px}
+section{padding:90px 40px;max-width:1150px;margin:0 auto}
+.kicker{color:var(--gold);letter-spacing:3px;font-size:12px;text-transform:uppercase;margin-bottom:14px}
+h2{font-family:'Playfair Display',serif;font-size:clamp(30px,4vw,48px);font-weight:500;line-height:1.15;margin-bottom:22px}
+.lead{color:var(--sub);max-width:640px;font-size:16.5px}
+.film{background:#0a0805;border-top:1px solid rgba(217,161,59,.15);border-bottom:1px solid rgba(217,161,59,.15)}
+.film-frame{position:relative;border-radius:18px;overflow:hidden;border:1px solid rgba(217,161,59,.3);box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.film-frame video,.film-frame .poster{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
+.poster{background:url('img/kitchen.jpg') center/cover}
+.film-badge{position:absolute;left:24px;bottom:24px;background:rgba(15,13,10,.82);border:1px solid rgba(217,161,59,.4);color:var(--cream);padding:10px 18px;border-radius:10px;font-size:13px;letter-spacing:1px}
+.film-badge b{color:var(--gold)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gallery figure{border-radius:16px;overflow:hidden;border:1px solid rgba(217,161,59,.2)}
+.gallery img{width:100%;height:300px;object-fit:cover;transition:transform .4s}
+.gallery img:hover{transform:scale(1.04)}
+.gallery figcaption{padding:12px 16px;font-size:13px;color:var(--sub);border-top:1px solid rgba(217,161,59,.12)}
+.dishes{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:40px}
+.dish{background:var(--card);border:1px solid rgba(217,161,59,.18);border-radius:14px;padding:22px 26px}
+.dish h4{font-family:'Playfair Display',serif;font-size:20px;color:var(--cream);margin-bottom:6px}
+.dish h4 span{color:var(--gold)}
+.dish p{font-size:14px;color:var(--sub)}
+.visit{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
+.fact{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid rgba(217,161,59,.12);font-size:15px}
+.fact b{color:var(--gold);min-width:92px;font-weight:600}
+.cta-card{background:var(--card);border:1px solid rgba(217,161,59,.35);border-radius:18px;padding:34px;text-align:center}
+.cta-card .serif{font-size:24px;margin-bottom:10px}
+.cta-card p{color:var(--sub);font-size:14px;margin-bottom:22px}
+footer{padding:40px;text-align:center;color:var(--sub);font-size:13px;border-top:1px solid rgba(217,161,59,.15)}
+footer b{color:var(--gold)}
+@media(max-width:800px){.gallery{grid-template-columns:1fr}.dishes{grid-template-columns:1fr}.visit{grid-template-columns:1fr}.strip{flex-direction:column}.strip div{border-right:none;border-bottom:1px solid rgba(217,161,59,.12)}nav{display:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">The Mughal's <b>Dastarkhwan</b></div>
+  <nav>
+    <a href="#story">Our story</a>
+    <a href="#signature">The signature film</a>
+    <a href="#menu">On the table</a>
+    <a href="#visit">Visit</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="eyebrow">Kaiserbagh, Lucknow · Est. in the old city's grandest quarter</span>
+    <h1>Awadhi food, served <em>like it's 1775.</em></h1>
+    <p>The Mughal's Dastarkhwan carries the royal Lucknow kitchen into today: galouti kebabs that melt before you chew, nihari slow-cooked overnight, and bread pulled straight off the tandoor.</p>
+    <a class="btn btn-gold" href="tel:+915224044777">Call to book a table</a>
+    <a class="btn btn-ghost" href="#menu">See what's cooking</a>
+  </div>
+</div>
+
+<div class="strip">
+  <div><div class="n">4.2★</div><div class="l">11,000+ Google reviews</div></div>
+  <div><div class="n">1775</div><div class="l">Awadhi kitchen traditions</div></div>
+  <div><div class="n">12:30–10:30</div><div class="l">Open every day</div></div>
+</div>
+
+<section id="story">
+  <p class="kicker">Our story</p>
+  <h2>A dastarkhwan is a royal spread. Ours has fed Lucknow for decades.</h2>
+  <p class="lead">From the first floor of the Novelty Cinema building in Kaiserbagh, The Mughal's Dastarkhwan keeps the courtly kitchen of Awadh alive: slow fires, whole spices, and recipes handed down rather than written down. Families come for Sunday nihari. Travellers come because their grandparents told them to.</p>
+</section>
+
+<section id="signature" class="film" style="max-width:none;padding-left:0;padding-right:0">
+  <section style="max-width:1150px">
+    <p class="kicker">The signature film</p>
+    <h2>Watch the grill work.</h2>
+    <div class="film-frame" id="filmframe">
+      <video id="herofilm" autoplay muted loop playsinline poster="img/kitchen.jpg">
+        <source src="img/hero-film.mp4" type="video/mp4">
+      </video>
+      <div class="film-badge"><b>SIGNATURE FILM</b> · galouti over charcoal, shot for the web</div>
+    </div>
+  </section>
+</section>
+
+<section id="menu">
+  <p class="kicker">On the table</p>
+  <h2>The classics, done the slow way.</h2>
+  <div class="gallery">
+    <figure><img src="img/food1.jpg" alt="Slow-cooked Awadhi dish with almonds"><figcaption>Haleem finished with almonds and pistachio</figcaption></figure>
+    <figure><img src="img/food2.jpg" alt="Galouti kebab with curry and roti"><figcaption>Galouti kebab, the reason people cross the city</figcaption></figure>
+    <figure><img src="img/kitchen.jpg" alt="Open grill kitchen at night"><figcaption>The charcoal grill, live from the courtyard kitchen</figcaption></figure>
+  </div>
+  <div class="dishes">
+    <div class="dish"><h4>Galouti Kebab <span>· house legend</span></h4><p>Minced fine enough to be eaten without teeth, seared on the griddle, served with warqi paratha.</p></div>
+    <div class="dish"><h4>Nihari <span>· overnight</span></h4><p>Slow-simmered till the gravy coats the spoon, best eaten before the lunch rush finds it.</p></div>
+    <div class="dish"><h4>Haleem <span>· winter special</span></h4><p>Pounded wheat and meat cooked down for hours, dressed with fried onion and lemon.</p></div>
+    <div class="dish"><h4>Awadhi Biryani <span>· dum style</span></h4><p>Fragrant, layered, sealed and steamed. Lucknow's version is about delicacy, not heat.</p></div>
+  </div>
+</section>
+
+<section id="visit">
+  <div>
+    <p class="kicker">Visit us</p>
+    <h2>Kaiserbagh, where the city eats.</h2>
+    <div class="fact"><b>Address</b> First Floor, Novelty Cinema Building, Kaiserbagh Officer's Colony, Lalbagh, Lucknow 226001</div>
+    <div class="fact"><b>Hours</b> Every day, 12:30 PM to 10:30 PM</div>
+    <div class="fact"><b>Phone</b> <a href="tel:+915224044777" style="color:var(--cream)">0522 404 4777</a></div>
+    <div class="fact"><b>Maps</b> <a href="https://maps.google.com/?cid=4426558394339315122" style="color:var(--cream)" target="_blank">Find us on Google Maps</a></div>
+  </div>
+  <div class="cta-card">
+    <div class="serif">Tables fill fast after 8.</div>
+    <p>Call ahead for the courtyard seats, especially on weekends.</p>
+    <a class="btn btn-gold" href="tel:+915224044777">Call 0522 404 4777</a>
+  </div>
+</section>
+
+<footer>Concept preview built for The Mughal's Dastarkhwan by <b>Black Canvas</b> · Lucknow</footer>
+<script>
+const v=document.getElementById('herofilm');
+v.addEventListener('error',()=>{document.getElementById('filmframe').innerHTML='<div class="poster"></div><div class="film-badge"><b>SIGNATURE FILM</b> · arriving with the full Black Canvas build</div>'},true);
+</script>
+</body>
+</html>
